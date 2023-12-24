@@ -36,7 +36,7 @@ const submitHandler = async () => {
   try {
     const config = { headers: { "Content-type": "application/json" } };
     const { data } = await axios.post(
-      "/api/user/login",
+      "https://mern-chat-app-vlkq.onrender.com/api/user/login",
       {  email, password },
       config
     );
